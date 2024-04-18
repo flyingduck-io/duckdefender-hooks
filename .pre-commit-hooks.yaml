@@ -1,0 +1,5 @@
+-   id: secret-scanner
+    name: Scan for secrets
+    description: This hook scans for secrets
+    entry: hooks/hooks.sh 
+    language: script
