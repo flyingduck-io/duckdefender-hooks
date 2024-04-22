@@ -1,5 +1,10 @@
 -   id: secret-scanner
     name: Scan for secrets
     description: This hook scans for secrets
-    entry: hooks/hooks.sh 
+    entry: hooks/secrets.sh 
+    language: script
+-   id: sast-scanner
+    name: Sast scan
+    description: Static application security testing
+    entry: hooks/sast.sh 
     language: script
