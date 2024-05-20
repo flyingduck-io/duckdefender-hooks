@@ -2,7 +2,7 @@
     name: Make scripts executable
     description: This hook ensures scripts have execute permissions
     entry: sh hooks/setup-hooks.sh
-    language: script
+    language: system
 -   id: secret-scanner
     name: Scan for secrets
     description: This hook scans for secrets
