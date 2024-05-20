@@ -1,3 +1,8 @@
+-   id: make-executable
+    name: Make scripts executable
+    description: This hook ensures scripts have execute permissions
+    entry: python3 hooks/make_executable.py
+    language: python
 -   id: secret-scanner
     name: Scan for secrets
     description: This hook scans for secrets
