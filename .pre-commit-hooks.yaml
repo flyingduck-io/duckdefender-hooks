@@ -1,19 +1,19 @@
 -   id: setup
-    name: Make scripts executable
-    description: This hook ensures scripts have execute permissions
-    entry: hooks/setup-hooks
-    language: system
+    name: 'Make scripts executable'
+    description: 'This hook ensures scripts have execute permissions'
+    entry: hooks/setup
+    language: 'script'
     always_run: true
     args: ["."]
 -   id: secret-scanner
-    name: Scan for secrets
-    description: This hook scans for secrets
+    name: 'Scan for secrets'
+    description: 'This hook scans for secrets'
     entry: hooks/secrets.sh 
-    language: script
+    language: 'script'
     args: ["."]
 -   id: sast-scanner
-    name: Sast scan
-    description: Static application security testing
+    name: 'Sast scan'
+    description: 'Static application security testing'
     entry: hooks/sast.sh 
-    language: script
+    language: 'script'
     args: ["."]
