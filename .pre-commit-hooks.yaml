@@ -3,13 +3,17 @@
     description: This hook ensures scripts have execute permissions
     entry: sh -c 'chmod +x hooks/secrets.sh hooks/sast.sh'
     language: system
+    always_run: true
+    args: ["."]
 -   id: secret-scanner
     name: Scan for secrets
     description: This hook scans for secrets
     entry: hooks/secrets.sh 
     language: script
+    args: ["."]
 -   id: sast-scanner
     name: Sast scan
     description: Static application security testing
     entry: hooks/sast.sh 
     language: script
+    args: ["."]
