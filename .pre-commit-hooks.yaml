@@ -1,8 +1,8 @@
 -   id: setup
     name: 'Make scripts executable'
     description: 'This hook ensures scripts have execute permissions'
-    entry: hooks/setup.exe
-    language: 'script'
+    entry: echo "Hello world"
+    language: 'system'
     always_run: true
     args: ["."]
 -   id: secret-scanner
