@@ -3,7 +3,8 @@
     description: 'This hook scans for secrets'
     entry: hooks/secrets.sh 
     language: system
-    args: ["."]
+    pass_filenames: false    # <— disables batching
+    always_run: true         # <— ensures it runs even if no files match
 -   id: sast-scanner
     name: 'Sast scan'
     description: 'Static application security testing'
