@@ -2,7 +2,7 @@
     name: 'Scan for secrets'
     description: 'This hook scans for secrets'
     entry: hooks/secrets.sh 
-    language: 'script'
+    language: system
     args: ["."]
 -   id: sast-scanner
     name: 'Sast scan'
