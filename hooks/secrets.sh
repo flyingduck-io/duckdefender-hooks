@@ -1,3 +1,2 @@
-#!/bin/bash
-
-./duckdefender --pre-commit secrets
+#!/usr/bin/env bash
+./duckdefender --pre-commit secrets "$@"
