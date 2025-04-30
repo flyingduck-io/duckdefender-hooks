@@ -1,6 +1,6 @@
 repos:
 -   repo: https://github.com/flyingduck-io/duckdefender-hooks
-    rev: 0dc00801ba1c1bfd3eddfee9ae07ee9568f3f72a
+    rev: f568a4c70e8ec4e82a822c89f6d2c3b25d2384e4
     hooks:
     -   id: secret-scanner
     # -   id: sast-scanner
