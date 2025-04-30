@@ -5,7 +5,7 @@
     language: system
     pass_filenames: false    # <— disables batching
     always_run: true         # <— ensures it runs even if no files match
-    args: ["."]
+    args: ["{{repo_path}}"]
 -   id: sast-scanner
     name: 'Sast scan'
     description: 'Static application security testing'
