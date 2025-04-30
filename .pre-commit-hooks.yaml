@@ -9,5 +9,6 @@
     name: 'Sast scan'
     description: 'Static application security testing'
     entry: hooks/sast.sh 
-    language: 'script'
-    args: ["."]
+    language: system
+    pass_filenames: false    # <— disables batching
+    always_run: true         # <— ensures it runs even if no files match
