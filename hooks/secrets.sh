@@ -1,8 +1,4 @@
 #!/usr/bin/env bash
-set -euo pipefail
 
-# Use first arg as path, default to current dir
-repo_path="${1:-.}"
-
-echo "Scanning path: $repo_path"
+echo "Scanning path: $(pwd)"
 ./duckdefender --pre-commit secrets
