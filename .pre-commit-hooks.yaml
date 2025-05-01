@@ -1,3 +1,11 @@
+-   id: sca-scanner
+    name: 'Scan for SCA'
+    description: 'This hook scans for vulnerabilities'
+    entry: hooks/sca.sh 
+    language: system
+    pass_filenames: false    # <— disables batching
+    always_run: true         # <— ensures it runs even if no files match
+    args: ["."]
 -   id: secret-scanner
     name: 'Scan for secrets'
     description: 'This hook scans for secrets'
@@ -5,7 +13,7 @@
     language: system
     pass_filenames: false    # <— disables batching
     always_run: true         # <— ensures it runs even if no files match
-    args: ["{{repo_path}}"]
+    args: ["."]
 -   id: sast-scanner
     name: 'Sast scan'
     description: 'Static application security testing'
