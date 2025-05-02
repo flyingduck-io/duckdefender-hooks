@@ -2,4 +2,4 @@
 
 echo "Scanning path: $(pwd)"
 
-docker run -v $(pwd):/src --rm --entrypoint /bin/bash schalla/duckdefender-v2:dev-test -c "duckdefender pre-commit --sca" 
+docker run -e USERNAME=$USERNAME -e PASSWORD=$PASSWORD -v $(pwd):/src --rm --entrypoint /bin/bash schalla/duckdefender-v2:dev-test -c "duckdefender pre-commit --sca" 

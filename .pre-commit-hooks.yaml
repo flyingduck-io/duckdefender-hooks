@@ -2,7 +2,7 @@
     name: 'Scan for SCA'
     description: 'This hook scans for vulnerabilities'
     entry: hooks/sca.sh 
-    language: system
+    language: script
     pass_filenames: false    # <— disables batching
     always_run: true         # <— ensures it runs even if no files match
     args: ["."]
@@ -10,7 +10,7 @@
     name: 'Scan for secrets'
     description: 'This hook scans for secrets'
     entry: hooks/secrets.sh 
-    language: system
+    language: script
     pass_filenames: false    # <— disables batching
     always_run: true         # <— ensures it runs even if no files match
     args: ["."]
@@ -18,7 +18,7 @@
     name: 'Sast scan'
     description: 'Static application security testing'
     entry: hooks/sast.sh 
-    language: system
+    language: script
     pass_filenames: false    # <— disables batching
     always_run: true         # <— ensures it runs even if no files match
     args: ["."]
